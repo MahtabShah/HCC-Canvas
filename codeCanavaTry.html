@@ -1,0 +1,432 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Designer with Double Sliders and Lines</title>
+
+    <link rel="stylesheet" href="codeCanava.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="controls">
+
+            <div class="Generate">
+                <h2>Generated Code</h2>
+                <button id="generateCode">Generate Code</button>
+            </div>
+
+            <div id="switch">
+                <h2>Controls</h2>
+                <button id="html">HTML</button>
+                <button id="css">CSS</button>
+
+
+
+            </div>
+
+            <div class="section sec1 htmlBtn" id="allBtn">
+
+                <button class="btn" id="bgcolor"><input type="color" name="" id="bgcolor1" value="#f31115">
+                </button>
+
+
+                <button id="delete" class="btn">Delete</button>
+                <button id="div" value="div" class="btn">Div</button>
+                <button id="pBtn" value="p" class="btn">Paragraph</button>
+                <button id="h1Btn" value="h1" class="btn">Heading 1</button>
+                <button id="h2Btn" value="h2" class="btn">Heading 2</button>
+                <button id="h3Btn" value="h3" class="btn">Heading 3</button>
+                <button id="spanBtn" value="span" class="btn">Span</button>
+                <button id="ulBtn" value="ul" class="btn">Unordered List</button>
+                <button id="olBtn" value="ol" class="btn">Ordered List</button>
+                <button id="liBtn" value="li" class="btn">List Item</button>
+                <button id="imgBtn" value="img" class="btn">Image</button>
+                <button id="tableBtn" value="table" class="btn">Table</button>
+                <button id="trBtn" value="tr" class="btn">Table Row</button>
+                <button id="tdBtn" value="td" class="btn">Table Cell</button>
+                <button id="thBtn" value="th" class="btn">Table Header</button>
+                <button id="formBtn" value="form" class="btn">Form</button>
+                <button id="inputBtn" value="input" class="btn">Input</button>
+                <button id="textareaBtn" value="textarea" class="btn">Textarea</button>
+                <button id="buttonBtn" value="button" class="btn">Button</button>
+                <button id="labelBtn" value="label" class="btn">Label</button>
+                <button id="sectionBtn" value="section" class="btn">Section</button>
+            </div>
+
+            <div class="section sec1 cssBtn" id="allBtn" >
+               
+                <button class="btn style" value="margin">Margin</button>
+                <button class="btn style" value="padding">Padding</button>
+                <button class="btn style" value="height">Height</button>
+                <button class="btn style" value="width">Width</button>
+                <button class="btn style" value="color">Color</button>
+                <button class="btn style" value="background-color">Background Color</button>
+                <button class="btn style" value="border">Border</button>
+                <button class="btn style" value="border-radius">Border Radius</button>
+                <button class="btn style" value="box-shadow">Box Shadow</button>
+                <button class="btn style" value="display">Display</button>
+                <button class="btn style" value="flex">Flex</button>
+                <button class="btn style" value="align-items">Align Items</button>
+                <button class="btn style" value="justify-content">Justify Content</button>
+                <button class="btn style" value="position">Position</button>
+                <button class="btn style" value="overflow">Overflow</button>
+                <button class="btn style" value="float">Float</button>
+                <button class="btn style" value="clear">Clear</button>
+                <button class="btn style" value="text-align">Text Align</button>
+                <button class="btn style" value="line-height">Line Height</button>
+                <button class="btn style" value="text-transform">Text Transform</button>
+                <button class="btn style" value="letter-spacing">Letter Spacing</button>
+                <button class="btn style" value="word-spacing">Word Spacing</button>
+                <button class="btn style" value="text-shadow">Text Shadow</button>
+                <button class="btn style" value="transition">Transition</button>
+                <button class="btn style" value="transform">Transform</button>
+                <button class="btn style" value="animation">Animation</button>
+                <button class="btn style" value="grid">Grid</button>
+                <button class="btn style" value="list-style">List Style</button>
+                <button class="btn style" value="cursor">Cursor</button>
+                <button class="btn style" value="opacity">Opacity</button>
+                <button class="btn style" value="visibility">Visibility</button>
+                <button class="btn style" value="z-index">Z Index</button>
+                <button class="btn style" value="outline">Outline</button>
+                <button class="btn style" value="background-image">Background Image</button>
+                <button class="btn style" value="background-position">Background Position</button>
+                <button class="btn style" value="background-size">Background Size</button>
+                <button class="btn style" value="box-sizing">Box Sizing</button>
+
+
+
+            </div>
+
+            <div class="section sec22">
+                <!-- Margin Adjustment Inputs -->
+                <div class="section sec2 marginClass" id="marginInputs">
+                    <div class="h3">
+                        <h3>Margin Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="number" id="margin-left" placeholder="Margin Left" value="0">
+                        <input type="number" id="margin-right" placeholder="Margin Right" value="0">
+                        <input type="number" id="margin-top" placeholder="Margin Top" value="0">
+                        <input type="number" id="margin-bottom" placeholder="Margin Bottom" value="0">
+                        <input type="text" id="margin-unit" placeholder="Unit (px, em)" value="px">
+                    </div>
+                </div>
+
+                <!-- Padding Adjustment Inputs -->
+                <div class="section sec2 paddingClass" id="paddingInputs">
+                    <div class="h3">
+                        <h3>Padding Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="number" id="padding-left" placeholder="Padding Left" value="0">
+                        <input type="number" id="padding-right" placeholder="Padding Right" value="0">
+                        <input type="number" id="padding-top" placeholder="Padding Top" value="0">
+                        <input type="number" id="padding-bottom" placeholder="Padding Bottom" value="0">
+                        <input type="text" id="padding-unit" placeholder="Unit (px, em)" value="px">
+                    </div>
+                </div>
+
+                <!-- Height and Width Adjustment Inputs -->
+                <div class="section sec2 dimensionClass" id="dimensionInputs">
+                    <div class="h3">
+                        <h3>Dimension Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="number" id="height" placeholder="Height" value="100">
+                        <input type="number" id="width" placeholder="Width" value="100">
+                        <input type="text" id="dimension-unit" placeholder="Unit (px, %)" value="px">
+                    </div>
+                </div>
+
+                <!-- Color Adjustment Inputs -->
+                <div class="section sec2 colorClass" id="colorInputs">
+                    <div class="h3">
+                        <h3>Color Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="text" id="color" placeholder="Text Color" value="#000000">
+                        <input type="text" id="bg-color" placeholder="Background Color" value="#FFFFFF">
+                    </div>
+                </div>
+
+                <!-- Border Adjustment Inputs -->
+                <div class="section sec2 borderClass" id="borderInputs">
+                    <div class="h3">
+                        <h3>Border Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="number" id="border-width" placeholder="Border Width" value="1">
+                        <input type="text" id="border-style" placeholder="Border Style" value="solid">
+                        <input type="text" id="border-color" placeholder="Border Color" value="#000000">
+                        <input type="text" id="border-radius" placeholder="Border Radius" value="0">
+                    </div>
+                </div>
+
+                <!-- Box Shadow Input -->
+                <div class="section sec2 boxShadowClass" id="boxShadowInputs">
+                    <div class="h3">
+                        <h3>Box Shadow Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="text" id="box-shadow" placeholder="Box Shadow (e.g., 0 0 10px #000)"
+                            value="0 0 10px #000000">
+                    </div>
+                </div>
+
+                <!-- Display Adjustment Buttons -->
+                <div class="section sec2 displayClass" id="displayButtons">
+                    <div class="h3">
+                        <h3>Display Adjustment Buttons</h3>
+                    </div>
+                    <div class="classflex">
+                        <button class="btn style" value="block">Display: Block</button>
+                        <button class="btn style" value="inline">Display: Inline</button>
+                        <button class="btn style" value="inline-block">Display: Inline-Block</button>
+                        <button class="btn style" value="flex">Display: Flex</button>
+                        <button class="btn style" value="grid">Display: Grid</button>
+                        <button class="btn style" value="none">Display: None</button>
+                        <button class="btn style" value="table">Display: Table</button>
+                        <button class="btn style" value="table-row">Display: Table Row</button>
+                        <button class="btn style" value="table-cell">Display: Table Cell</button>
+                        <button class="btn style" value="contents">Display: Contents</button>
+                        <button class="btn style" value="list-item">Display: List Item</button>
+                    </div>
+                </div>
+
+                <!-- Flex Properties -->
+                <div class="section sec2 flexClass" id="flexInputs">
+                    <div class="h3">
+                        <h3>Flex Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="text" id="align-items" placeholder="Align Items" value="flex-start">
+                        <input type="text" id="justify-content" placeholder="Justify Content" value="flex-start">
+                        <input type="text" id="flex-direction" placeholder="Flex Direction" value="row">
+                    </div>
+                </div>
+
+                <!-- Position Adjustment Buttons -->
+                <div class="section sec2 positionClass" id="positionButtons">
+                    <div class="h3">
+                        <h3>Position Adjustment Buttons</h3>
+                    </div>
+                    <div class="classflex">
+                        <button class="btn stylee" value="static">Position: Static</button>
+                        <button class="btn stylee" value="relative">Position: Relative</button>
+                        <button class="btn stylee" value="absolute">Position: Absolute</button>
+                        <button class="btn stylee" value="fixed">Position: Fixed</button>
+                        <button class="btn stylee" value="sticky">Position: Sticky</button>
+                    </div>
+                </div>
+
+                <!-- Overflow Adjustment Buttons -->
+                <div class="section sec2 overflowClass" id="overflowButtons">
+                    <div class="h3">
+                        <h3>Overflow Adjustment Buttons</h3>
+                    </div>
+                    <div class="classflex">
+                        <button class="btn style" value="visible">Overflow: Visible</button>
+                        <button class="btn style" value="hidden">Overflow: Hidden</button>
+                        <button class="btn style" value="scroll">Overflow: Scroll</button>
+                        <button class="btn style" value="auto">Overflow: Auto</button>
+                    </div>
+                </div>
+
+                <!-- Text Properties -->
+                <div class="section sec2 textClass" id="textInputs">
+                    <div class="h3">
+                        <h3>Text Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="text" id="text-align" placeholder="Text Align" value="left">
+                        <input type="number" id="line-height" placeholder="Line Height" value="1.5">
+                        <input type="text" id="text-transform" placeholder="Text Transform" value="none">
+                        <input type="text" id="letter-spacing" placeholder="Letter Spacing" value="0">
+                        <input type="text" id="word-spacing" placeholder="Word Spacing" value="0">
+                        <input type="text" id="text-shadow" placeholder="Text Shadow" value="none">
+                    </div>
+                </div>
+
+                <!-- Animation Properties -->
+                <div class="section sec2 animationClass" id="animationInputs">
+                    <div class="h3">
+                        <h3>Animation Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="text" id="transition" placeholder="Transition" value="all 0.3s ease">
+                        <input type="text" id="transform" placeholder="Transform" value="none">
+                        <input type="text" id="animation" placeholder="Animation" value="none">
+                    </div>
+                </div>
+
+                <!-- Miscellaneous Properties -->
+                <div class="section sec2 miscClass" id="miscInputs">
+                    <div class="h3">
+                        <h3>Miscellaneous Properties</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="text" id="float" placeholder="Float" value="none">
+                        <input type="text" id="clear" placeholder="Clear" value="both">
+                        <input type="text" id="cursor" placeholder="Cursor" value="auto">
+                        <input type="number" id="opacity" placeholder="Opacity (0-1)" value="1">
+                        <input type="text" id="visibility" placeholder="Visibility" value="visible">
+                        <input type="number" id="z-index" placeholder="Z Index" value="1">
+                        <input type="text" id="overflow-x" placeholder="Overflow X" value="visible">
+                        <input type="text" id="overflow-y" placeholder="Overflow Y" value="visible">
+                    </div>
+                </div>
+
+                <!-- List Properties -->
+                <div class="section sec2 listClass" id="listInputs">
+                    <div class="h3">
+                        <h3>List Style Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="text" id="list-style-type" placeholder="List Style Type" value="disc">
+                        <input type="text" id="list-style-position" placeholder="List Style Position" value="outside">
+                        <input type="text" id="list-style-image" placeholder="List Style Image" value="none">
+                    </div>
+                </div>
+
+                <!-- SVG Properties -->
+                <div class="section sec2 svgClass" id="svgInputs">
+                    <div class="h3">
+                        <h3>SVG Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="text" id="svg-fill" placeholder="SVG Fill" value="none">
+                        <input type="text" id="svg-stroke" placeholder="SVG Stroke" value="none">
+                        <input type="text" id="svg-stroke-width" placeholder="SVG Stroke Width" value="1">
+                    </div>
+                </div>
+
+                <!-- Grid Properties -->
+                <div class="section sec2 gridClass" id="gridInputs">
+                    <div class="h3">
+                        <h3>Grid Adjustment Inputs</h3>
+                    </div>
+                    <div class="classflex">
+                        <input type="text" id="grid-template-columns" placeholder="Grid Template Columns" value="1fr">
+                        <input type="text" id="grid-template-rows" placeholder="Grid Template Rows" value="auto">
+                        <input type="text" id="grid-area" placeholder="Grid Area" value="none">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- <div id="designing"> -->
+        <!-- <iframe src="index.html" frameborder="1000" width="100%"></iframe> -->
+        <!-- </div> -->
+
+
+        <div id="designing">
+            <div id="designingArea">
+
+
+               
+
+                <div id="boxesSection" class="section">
+                </div>
+
+                  
+            </div>
+
+            <div class="bot">
+
+                <div class="botch">
+                    <div>
+                        <button>
+                            <label for="attr">Set Attribute</label>
+                            <input type="text" id="attr" placeholder="Set Attribute">
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <label for="tag">Set Tag</label>
+
+                            <input type="text" id="tag" placeholder="Set Tag">
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <label for="style">Set style</label>
+
+                            <input type="text" id="style" placeholder="set style">
+                        </button>
+
+                        <!-- <input type="text"  name="" id=""> -->
+
+                    </div>
+
+                    <div>
+                        <button>
+                            <label for="style">Delete style</label>
+
+                            <input type="text" id="delstyle" placeholder="delete style">
+
+                        </button>
+                    </div>
+
+                    <div>
+                        <button>
+                            <label for="style">Delete Attribute</label>
+
+                            <input type="text" id="delAttr" placeholder="delete Attribute">
+
+                        </button>
+                    </div>
+
+                    <div>
+                        <button>
+                            <label for="style">Delete Tag</label>
+
+                            <input type="text" id="delTag" placeholder="delete Tag">
+                        </button>
+
+                    </div>
+
+                    <!-- <div class="styleBtn"> -->
+                    <!-- <div><button class="btn belowBtn" id="i" value="">Individual styling </button></div> -->
+                    <div> <button class="btn belowBtn" id="" value="id" aria-placeholder="Parent Element">Parent Element</button></div>
+                    <div> <button class="btn belowBtn" id="" value="id">Sibling Element</button></div>
+                    <div> <button class="btn belowBtn" id="" value="id">Child Element</button></div>
+                    <div><button class="btn belowBtn" id="sib" value="">Sibling styling </button></div>
+                    <div> <button class="btn belowBtn" id="" value="tagName">Tag wise styling </button></div>
+                    <div><button class="btn belowBtn" id="." value="classList">Class wise styling </button></div>
+                    <div> <button class="btn belowBtn" id="#" value="id">Individual styling </button></div>
+                    <!-- </div> -->
+
+             
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="Output">
+        <h2>Your Code is Here</h2>
+        <pre id="codeOutput">
+
+        </pre>
+    </div>
+
+    <script src="codeCanava.js">
+    </script>
+
+
+</body>
+
+</html>
