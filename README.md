@@ -1,3 +1,3 @@
 # HCC-Canvas Web appplication.. 
  
- images upload
+ images uploaded
