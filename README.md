@@ -1,1 +1,1 @@
-# HCC-Canvas
+# HCC-Canvas Web appplication
