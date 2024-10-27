@@ -1,0 +1,89 @@
+.mdiv2 {
+    /* padding: 4px; */
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    /* border: 2px solid rgb(255, 0, 0); */
+    /* grid-template-columns: repeat(auto-fill, minmax(50%, 2fr)); */
+    background-color: rgba(236, 231, 231, 0.892);
+    gap: 20px;
+    line-height: 1.5;
+    white-space:1.2;
+    overflow: hidden;
+
+}
+
+.md1 {
+
+    /* border: 1px solid black; */
+    padding: 24px 30px;
+    /* height: 700px; */
+    height: 100%;
+
+    display: flex;
+    align-items: first baseline;
+    /* align-items: center; */
+    justify-content: center;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1400"%3E%3Cdefs%3E%3ClinearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%"%3E%3Cstop offset="0%" style="stop-color:%23ff23ff; stop-opacity:1" /%3E%3Cstop offset="100%" style="stop-color:%238cbaff; stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d="M 0 0 C 0 0, 1200 660, 0 1400 Z" fill="url(%23gradient)" /%3E%3C/svg%3E');
+    font-family: Verdana, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* overflow-y: auto; */
+    overflow-x: hidden;
+    /* overflow: hidden; */
+    opacity: 1;
+    /* position: sticky; */
+
+    transform: translate(-10% , 10%);
+
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+
+.md1img {
+    opacity: 0.8;
+    /* position: sticky; */
+
+    
+}
+
+.md2 {
+    /* border: 1px solid black; */
+    padding: 2px;
+    color: rgb(45, 43, 43);
+    font-family: sans-serif;
+    height: 700px;
+    /* overflow-y: auto; */
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    margin-bottom: 10px;
+    transform: translate(5% , 10%);
+    height: 100%;
+
+}
+
+@media(max-width: 1000px) {
+    .mdiv2 {
+        grid-template-columns: 1fr;
+
+    }
+
+    .md1{
+        padding: 50px;
+        /* margin-left: -100px; */
+        height: fit-content;
+
+    }
+    .md2 {
+        padding: 0px 4px 0 0;
+        height: 100%;
+
+    }
+
+}
+
+
+.active {
+    opacity: 1;
+    transform: translateX(0); 
+}

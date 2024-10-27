@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Page</title>
+    <style>
+        iframe {
+            width: 600px;
+            height: 400px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Parent Page</h1>
+
+    <!-- Iframe with an id -->
+    <iframe id="myIframe" src="iframe-content.html"></iframe>
+
+    <button onclick="changeIframeContent()">Change Iframe Content</button>
+
+    <script>
+        // Accessing iframe by its ID from parent page
+        function changeIframeContent() {
+            const iframe = document.getElementById('myIframe');
+            
+            // Access the iframe's document if the iframe and parent are same-origin
+            const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+            
+            // Change the content inside the iframe
+            iframeDocument.body.innerHTML = '<h2>Content Changed from Parent</h2>';
+        }
+    </script>
+
+</body>
+</html>

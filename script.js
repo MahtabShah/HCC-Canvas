@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".fade-in"); // Select all elements with fade-in, move-right, and move-left
 
