@@ -1,0 +1,4 @@
+[submodule "vocabulary"]
+    path = vocabulary
+    url = https://github.com/MahtabShah/HCC-Canvas/blob/main/vocabulary
+
