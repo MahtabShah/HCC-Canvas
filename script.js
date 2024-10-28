@@ -51,7 +51,7 @@ window.addEventListener("scroll", function () {
     // Apply the calculated top position to the element
     document.getElementById("container2").style.top = `${newTop}px`;
     document.getElementById("container3").style.top = `${300 - newTop}px`;
-    document.getElementsByClassName("mobile-container")[0].style.right = `${ -50 - 120 + newTop}px`;
+    document.getElementsByClassName("mobile-container")[0].style.top = `${newTop-64}px`;
 });
 
 

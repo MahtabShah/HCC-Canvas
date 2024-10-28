@@ -99,6 +99,9 @@ body {
     background: rgb(242, 239, 239);
     box-shadow: 0 0 6px black;
     color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(http://4.bp.blogspot.com/-cQ4XnoW4Ysc/Tzbg3Jh25VI/AAAAAAAAA74/xFjSDny2SqU/s1600/21.Jpg);
 }
 
 .imp-points {
