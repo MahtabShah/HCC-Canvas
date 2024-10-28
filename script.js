@@ -51,11 +51,14 @@ window.addEventListener("scroll", function () {
     // Apply the calculated top position to the element
     document.getElementById("container2").style.top = `${newTop}px`;
     document.getElementById("container3").style.top = `${300 - newTop}px`;
-    document.getElementsByClassName("mobile-container")[0].style.top = `${newTop-64}px`;
+    document.getElementsByClassName("mobile-container")[0].style.marginTop = `${-12 + Math.min( 10, document.documentElement.scrollTop * 0.0081 )}%`;
 });
 
 
 document.getElementById('getStarted').addEventListener('click' , ()=>{
-    document.getElementsByClassName('baapContainer')[0].style.display = 'none';
-    document.getElementById('afterGet').style.display = 'flex'
+    // document.getElementsByClassName('baapContainer')[0].style.display = 'none';
+    // document.getElementById('afterGet').style.display = 'flex'
+
+    window.location.href = "codeCanavaTry.html";
+
 })
