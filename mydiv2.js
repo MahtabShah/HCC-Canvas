@@ -70,6 +70,10 @@ buttons.forEach(button => {
             button.classList.add('redish');
 
         }
-
     })
 });
+
+
+function show(msg){
+    alert("We are working on " + msg);
+}
