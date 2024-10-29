@@ -11,51 +11,61 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-   
+
     handleScroll(); // Initial check for elements already in view
 });
 
 
+let next = document.querySelector('.signLoginface');
 
-// window.addEventListener('load' , ()=>{
+window.addEventListener('load', () => {
 
-//     document.getElementsByClassName('login')[0].addEventListener('click' , ()=>{
-//         document.getElementsByClassName('signIn')[0].style.display = 'flex';
-//         document.getElementsByClassName('name')[0].style.display = 'none';
-//     })
+    document.getElementsByClassName('login')[0].addEventListener('click', () => {
+        document.getElementsByClassName('signIn')[0].style.display = 'flex';
+        document.getElementsByClassName('name')[0].style.display = 'none';
+        next.style.display = 'flex';
+     
 
-//     document.getElementsByClassName('signup')[0].addEventListener('click' , ()=>{
-//         document.getElementsByClassName('signIn')[0].style.display = 'flex';
-//         document.getElementsByClassName('name')[0].style.display = 'flex';
-//     })
-// })
+    })
+
+    document.getElementsByClassName('signup')[0].addEventListener('click', () => {
+        document.getElementsByClassName('signIn')[0].style.display = 'flex';
+        document.getElementsByClassName('name')[0].style.display = 'flex';
+        next.style.display = 'flex';
+
+    })
+})
 
 
+document.querySelector('.canceled').addEventListener('click' , ()=>{
+        next.style.display = 'none';
+            
+})
 
 
 
 window.addEventListener("scroll", function () {
     // Get the current scroll position
-    
+
     // console.log(scrollPosition);
 
-    let Dif = -40 +  0.2381 * document.documentElement.scrollTop;
+    let Dif = -40 + 0.2381 * document.documentElement.scrollTop;
     // const maxScroll = 1800; 
-    const maxTop = 180;     
+    const maxTop = 180;
 
     // Limit the scroll position to the range 0 - 700px
-    const limitedScroll = Math.min( maxTop, Dif )
+    const limitedScroll = Math.min(maxTop, Dif)
     // Calculate the new top position as a ratio of the scroll distance
     const newTop = (limitedScroll);
 
     // Apply the calculated top position to the element
     document.getElementById("container2").style.top = `${newTop}px`;
     document.getElementById("container3").style.top = `${300 - newTop}px`;
-    document.getElementsByClassName("mobile-container")[0].style.marginTop = `${-12 + Math.min( 10, document.documentElement.scrollTop * 0.0081 )}%`;
+    document.getElementsByClassName("mobile-container")[0].style.marginTop = `${-12 + Math.min(10, document.documentElement.scrollTop * 0.0081)}%`;
 });
 
 
-document.getElementById('getStarted').addEventListener('click' , ()=>{
+document.getElementById('getStarted').addEventListener('click', () => {
     // document.getElementsByClassName('baapContainer')[0].style.display = 'none';
     // document.getElementById('afterGet').style.display = 'flex'
 

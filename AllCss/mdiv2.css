@@ -18,8 +18,8 @@
     font-family: Verdana, sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translate(0% , 34%);
-    transition: transform 0.8s ease, opacity 0.8s ease;
+    transform: translate(0% , 11%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .md1img {
@@ -37,9 +37,9 @@
     color: rgb(45, 43, 43);
     font-family: sans-serif;
     height: 700px;
-    transition: transform 0.8s ease, opacity 0.8s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
     margin-bottom: 10px;
-    transform: translate(0% , 34%);
+    transform: translate(0% , 11%);
     height: 100%;
 }
 
@@ -119,3 +119,21 @@ a{
 .active-baap{
     transform: translate(0,0);
 }
+
+.fab{
+color: rgb(67, 67, 215);
+padding: 5px;
+margin: 1px 7px;
+}
+
+.sigLog{
+    width: 100px;
+    border: 1px solid #00ff08;
+    border-radius: 7px;
+    display: flex;
+    gap: 2px 10px;
+    padding: 10px;
+    background-color: #c3ecc4;
+    cursor: pointer;
+}
+

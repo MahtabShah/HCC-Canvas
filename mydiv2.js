@@ -9,7 +9,7 @@ document.addEventListener("scroll", () => {
     const bapcontTop = baapcont.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
-    if (containerTop < windowHeight - 150) {
+    if (containerTop < windowHeight - 100) {
         rightBox.classList.add("active");
         leftBox.classList.add("active");
 
