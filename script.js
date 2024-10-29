@@ -17,18 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-window.addEventListener('load' , ()=>{
+// window.addEventListener('load' , ()=>{
 
-    document.getElementsByClassName('login')[0].addEventListener('click' , ()=>{
-        document.getElementsByClassName('signIn')[0].style.display = 'flex';
-        document.getElementsByClassName('name')[0].style.display = 'none';
-    })
+//     document.getElementsByClassName('login')[0].addEventListener('click' , ()=>{
+//         document.getElementsByClassName('signIn')[0].style.display = 'flex';
+//         document.getElementsByClassName('name')[0].style.display = 'none';
+//     })
 
-    document.getElementsByClassName('signup')[0].addEventListener('click' , ()=>{
-        document.getElementsByClassName('signIn')[0].style.display = 'flex';
-        document.getElementsByClassName('name')[0].style.display = 'flex';
-    })
-})
+//     document.getElementsByClassName('signup')[0].addEventListener('click' , ()=>{
+//         document.getElementsByClassName('signIn')[0].style.display = 'flex';
+//         document.getElementsByClassName('name')[0].style.display = 'flex';
+//     })
+// })
 
 
 

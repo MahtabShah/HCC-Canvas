@@ -48,6 +48,19 @@ if(ImpTop < windowHeight-30){
 
 
 
+
+
+
+
+
+let menutn = document.querySelector('.menuBtn');
+let menuAtag = document.querySelectorAll('.menuBtn a');
+let menuBar = document.querySelector('.fa-bars');
+
+let buttons = document.querySelectorAll('.nav-links > a');
+let activebtn = buttons[0];
+let cnt = 0;
+
 function showSection(sectionId) {
     // Hide all sections
     const sections = document.querySelectorAll('.content-section');
@@ -64,15 +77,46 @@ function showSection(sectionId) {
     const height = selectedSection.getBoundingClientRect().top + window.scrollY; // Calculate position
     window.scrollTo({ top: height - 140, behavior: 'smooth' }); // Scroll to the position
 
+    menutn.style.display = 'none';
+    console.log("return");
+    menuAtag.forEach(a=>{
+        a.classList.remove("activbar");
+    })
 
+    cnt++;
 
 
 
 }
 
 
-let buttons = document.querySelectorAll('.nav-links > a');
-let activebtn = buttons[0];
+
+menuBar.addEventListener('click' , ()=>{
+    cnt++;
+
+    if (cnt%2 == 0) {
+    menutn.style.display = 'none';
+    console.log("return");
+    menuAtag.forEach(a=>{
+        a.classList.remove("activbar");
+    })
+
+    return ;
+        
+    }
+    
+    menutn.style.display = 'flex';
+    console.log("static");
+
+    menuAtag.forEach(a=>{
+        a.classList.add("activbar");
+    })
+
+    
+})
+
+
+
 
 buttons.forEach(button => {
 
