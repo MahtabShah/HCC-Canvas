@@ -63,15 +63,12 @@ body {
 }
 
 .baapContainer {
-    /* margin-top: 60px; */
     display: flex;
     justify-content: space-between;
     gap: 10%;
     padding-bottom: 40px;
     padding-top: 20px;
     color: rgb(22, 21, 21);
-    /* border: 2px solid red; */
-    /* background-color: #dadfe6; */
     box-shadow: 0px 0px 1px rgba(207, 202, 202, 0.846);
     /* clip-path: ellipse(100% 100% at 20% 0%); */
     transition: opacity 1s ease, transform 1s ease;
@@ -234,8 +231,6 @@ img {
     height: 100vh;
     padding: 10px 0px;
     overflow-x: hidden;
-    /* background-color: #022853; */
-    /* padding-bottom: 160px; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -542,14 +537,11 @@ img {
 
 .form-group {
     position: relative;
-    /* width: 100%; */
-    /* max-width: 100px; */
     margin: 20px 0;
 }
 
 .form-group input {
     width: 98%;
-    /* padding: 12px; */
     padding-top: 10px;
     padding-bottom: 20px;
     border: 1px solid #ddd;
@@ -597,31 +589,23 @@ img {
     padding: 12px 24px;
     width: 100%;
     background-color: #3def1e;
-    /* Primary button color */
     color: #fff;
-    /* Text color */
     font-size: 16px;
     font-weight: bold;
     border: none;
     border-radius: 8px;
-    /* Rounded corners */
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    /* Smooth transitions */
 }
 
 .submit:hover {
     background-color: #1565ba;
-    /* Darker shade on hover */
     transform: translateY(-2px);
-    /* Slight lift on hover */
 }
 
 .submit:active {
     background-color: #004494;
-    /* Even darker shade on click */
     transform: translateY(1px);
-    /* Slight press effect */
 }
 
 

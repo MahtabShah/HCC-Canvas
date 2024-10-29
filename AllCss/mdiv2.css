@@ -58,6 +58,7 @@
 a{
     cursor: pointer;
 }
+
 .content-section {
     display: none; 
     margin-top: 20px;
@@ -90,6 +91,7 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
+
 .footerA > a{
     color: rgb(178, 181, 190);
     margin: 5px;
