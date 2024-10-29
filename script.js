@@ -39,7 +39,7 @@ window.addEventListener("scroll", function () {
     
     // console.log(scrollPosition);
 
-    let Dif = 120 + 0.2381 * document.documentElement.scrollTop;
+    let Dif = -40 +  0.2381 * document.documentElement.scrollTop;
     // const maxScroll = 1800; 
     const maxTop = 180;     
 

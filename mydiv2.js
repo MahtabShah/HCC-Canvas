@@ -28,6 +28,20 @@ document.addEventListener("scroll", () => {
 
     }
 
+    
+let impp = document.getElementsByClassName('imp-points')[0];
+let c = document.getElementsByClassName('container')[0];
+const ImpTop = impp.getBoundingClientRect().top;
+
+if(ImpTop < windowHeight-30){
+    impp.classList.add("active-baap");
+    c.classList.add("active-baap");
+    
+}else{
+    impp.classList.remove("active-baap");
+    c.classList.remove("active-baap");
+
+}
 
 
 });
@@ -77,3 +91,7 @@ buttons.forEach(button => {
 function show(msg){
     alert("We are working on " + msg);
 }
+
+
+
+
