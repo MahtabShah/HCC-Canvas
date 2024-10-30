@@ -131,7 +131,7 @@ body {
 }
 
 .imp-points {
-    margin: 0 0 0 46px;
+    margin: 0 0 0 16px;
     padding-left: 2px;
     min-width: 300px;
     transition: transform 0.8s ease, opacity 0.8s ease;
