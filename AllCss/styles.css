@@ -438,7 +438,7 @@ form{
     }
 
     .md2{
-        margin: 0 5%;
+        margin-right:5%;
     }
 
     .md1img{
@@ -625,7 +625,7 @@ form{
        display: flex;
        flex-direction: column;
        /* align-items: center; */
-       margin-left: 5%;
+       margin-left: 3%;
 
 
     }
