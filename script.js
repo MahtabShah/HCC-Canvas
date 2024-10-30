@@ -16,33 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-let next = document.querySelector('.signLoginface');
-
-window.addEventListener('load', () => {
-
-    document.getElementsByClassName('login')[0].addEventListener('click', () => {
-        document.getElementsByClassName('signIn')[0].style.display = 'flex';
-        document.getElementsByClassName('name')[0].style.display = 'none';
-        next.style.display = 'flex';
-     
-
-    })
-
-    document.getElementsByClassName('signup')[0].addEventListener('click', () => {
-        document.getElementsByClassName('signIn')[0].style.display = 'flex';
-        document.getElementsByClassName('name')[0].style.display = 'flex';
-        next.style.display = 'flex';
-
-    })
-})
-
-
-document.querySelector('.canceled').addEventListener('click' , ()=>{
-        next.style.display = 'none';
-            
-})
-
-
 
 window.addEventListener("scroll", function () {
     // Get the current scroll position

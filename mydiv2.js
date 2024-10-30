@@ -91,6 +91,41 @@ function showSection(sectionId) {
 
 
 
+let next = document.querySelector('.signLoginface');
+
+// window.addEventListener('load', () => {
+
+    document.getElementsByClassName('login')[1].addEventListener('click', () => {
+        document.getElementsByClassName('signIn')[0].style.display = 'flex';
+        document.getElementsByClassName('name')[0].style.display = 'none';
+        console.log("login");
+
+        next.style.display = 'flex';
+     
+
+    })
+
+    document.getElementsByClassName('signup')[1].addEventListener('click', () => {
+        document.getElementsByClassName('signIn')[0].style.display = 'flex';
+        document.getElementsByClassName('name')[0].style.display = 'flex';
+        console.log("signup");
+
+        next.style.display = 'flex';
+
+    })
+// })
+
+
+document.querySelector('.canceled').addEventListener('click' , ()=>{
+        next.style.display = 'none';
+        document.querySelector('.canceled').display = 'none';
+            
+})
+
+
+
+
+
 menuBar.addEventListener('click' , ()=>{
     cnt++;
 

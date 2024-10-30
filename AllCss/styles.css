@@ -131,7 +131,7 @@ body {
 }
 
 .imp-points {
-    margin: 0 0 0 6px;
+    margin: 0 0 0 46px;
     padding-left: 2px;
     min-width: 300px;
     transition: transform 0.8s ease, opacity 0.8s ease;
@@ -342,8 +342,8 @@ img {
     background-color: #ecf0f3;
     opacity: 1;
     top: 0;
-    bottom: 0;
-    /* height: 100vh; */
+    bottom: 30px;
+    height: 99vh;
     left: 0;
     right: 0;
     /* border: 2px solid red; */
@@ -351,7 +351,7 @@ img {
     align-items: center;
     flex-direction: column;
     overflow-y: auto;
-    padding-bottom: 14px;
+    padding-bottom: 24px;
     padding-top: 10px;
 
 }
@@ -429,7 +429,7 @@ form{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0 30%;
-        padding: 0 5px;
+        padding: 0 15px;
     }
 
     .md1 {
@@ -437,8 +437,12 @@ form{
         padding: 2px;
     }
 
+    .md2{
+        margin: 0 5%;
+    }
+
     .md1img{
-        border: 1px solid rgba(0, 0, 0, 0.234);
+        /* border: 1px solid rgba(0, 0, 0, 0.234); */
         box-shadow: 0 0 2px rgb(225, 222, 222);
     }
 
@@ -514,8 +518,11 @@ form{
     }
 
     .imp-points {
-        margin-left: 10px;
-        transform: translate(0);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 1%;
+        padding: 0 15px;
+        width: 100%;
 
 
     }
@@ -590,6 +597,11 @@ form{
         padding: 0 7px;
     }
 
+    .md1img{
+        border: 1px solid rgba(0, 0, 0, 0.061);
+        box-shadow: 0 0 2px rgb(0, 0, 0);
+    }
+
 }
 
 @media(min-height : 0px ) and (max-height: 600px){
@@ -608,7 +620,16 @@ form{
     }
 }
 
+@media(max-width:350px){
+    .imp-points {
+       display: flex;
+       flex-direction: column;
+       /* align-items: center; */
+       margin-left: 5%;
 
+
+    }
+}
 
 .fade-in {
     opacity: 0;
@@ -751,7 +772,7 @@ a {
 
 .hideSL{
     margin-top: 6px;
-    width: 69%;
+    width: 63%;
     display: flex;
     justify-content: space-between;
     margin: 0 5px;
@@ -763,8 +784,12 @@ a {
 }
 
 .menuBtn a {
-    width: 70%;
+    width: 64%;
     margin: 7px;
     border-radius: 3px;
 
+}
+
+.getStarhide{
+    background-color: #16d71d;
 }
