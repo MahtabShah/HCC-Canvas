@@ -93,19 +93,29 @@ function showSection(sectionId) {
 
 let next = document.querySelector('.signLoginface');
 
-// window.addEventListener('load', () => {
 
-    document.getElementsByClassName('login')[1].addEventListener('click', () => {
+// window.addEventListener('load', () => {
+let btns = document.querySelectorAll('.login');
+
+btns.forEach(btn => {
+
+    btn.addEventListener('click', () => {
         document.getElementsByClassName('signIn')[0].style.display = 'flex';
         document.getElementsByClassName('name')[0].style.display = 'none';
         console.log("login");
 
         next.style.display = 'flex';
-     
+
 
     })
 
-    document.getElementsByClassName('signup')[1].addEventListener('click', () => {
+})
+
+let sBtns = document.querySelectorAll('.signup');
+
+sBtns.forEach(el => {
+
+    el.addEventListener('click', () => {
         document.getElementsByClassName('signIn')[0].style.display = 'flex';
         document.getElementsByClassName('name')[0].style.display = 'flex';
         console.log("signup");
@@ -113,6 +123,10 @@ let next = document.querySelector('.signLoginface');
         next.style.display = 'flex';
 
     })
+    // })
+
+});
+
 
 
 document.querySelector('.canceled').addEventListener('click' , ()=>{
