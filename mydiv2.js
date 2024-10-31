@@ -95,10 +95,6 @@ let next = document.querySelector('.signLoginface');
 
 // window.addEventListener('load', () => {
 
-// let butns = document.getElementsByClassName('login');
-
-// butns.forEach(BTN => {
-
     document.getElementsByClassName('login')[1].addEventListener('click', () => {
         document.getElementsByClassName('signIn')[0].style.display = 'flex';
         document.getElementsByClassName('name')[0].style.display = 'none';
@@ -106,11 +102,10 @@ let next = document.querySelector('.signLoginface');
 
         next.style.display = 'flex';
      
-})
 
-    // })
+    })
 
-document.getElementsByClassName('signup')[1].addEventListener('click', () => {
+    document.getElementsByClassName('signup')[1].addEventListener('click', () => {
         document.getElementsByClassName('signIn')[0].style.display = 'flex';
         document.getElementsByClassName('name')[0].style.display = 'flex';
         console.log("signup");
@@ -118,8 +113,6 @@ document.getElementsByClassName('signup')[1].addEventListener('click', () => {
         next.style.display = 'flex';
 
     })
-// })
-// })
 
 
 document.querySelector('.canceled').addEventListener('click' , ()=>{
