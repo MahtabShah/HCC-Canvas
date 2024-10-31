@@ -95,11 +95,11 @@ let next = document.querySelector('.signLoginface');
 
 // window.addEventListener('load', () => {
 
-let butns = document.getElementsByClassName('login');
+// let butns = document.getElementsByClassName('login');
 
-butns.forEach(BTN => {
+// butns.forEach(BTN => {
 
-    BTN.addEventListener('click', () => {
+    document.getElementsByClassName('login')[1].addEventListener('click', () => {
         document.getElementsByClassName('signIn')[0].style.display = 'flex';
         document.getElementsByClassName('name')[0].style.display = 'none';
         console.log("login");
@@ -108,12 +108,9 @@ butns.forEach(BTN => {
      
 })
 
-    })
+    // })
 
-let sButn = document.getElementsByClassName('signup');
-sBTN.forEach(Btnn =>{
-    
-    Btnn.addEventListener('click', () => {
+document.getElementsByClassName('signup')[1].addEventListener('click', () => {
         document.getElementsByClassName('signIn')[0].style.display = 'flex';
         document.getElementsByClassName('name')[0].style.display = 'flex';
         console.log("signup");
@@ -121,7 +118,7 @@ sBTN.forEach(Btnn =>{
         next.style.display = 'flex';
 
     })
-})
+// })
 // })
 
 
