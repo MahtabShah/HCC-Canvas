@@ -99,7 +99,7 @@ a{
     color: rgb(178, 181, 190);
     margin: 5px;
     border: 1px solid rgba(37, 37, 36, 0.446);
-    border-radius: 7px;
+    border-radius: 6px;
     padding: 4px;
 }
 
@@ -112,7 +112,6 @@ a{
 }
 
 #feed{
-    content: "";
     width: 100%;
     height: 40px;
     color: rgb(25, 24, 24);
