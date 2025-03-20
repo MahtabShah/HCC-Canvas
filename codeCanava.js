@@ -1,50 +1,4 @@
 
-// const sliderTop = document.getElementById('sliderTop1');
-// const thumbLineTop = document.getElementById('thumbLineTop');
-
-// const sliderLeft = document.getElementById('sliderLeft1');
-// const thumbLineLeft = document.getElementById('thumbLineLeft');
-
-// const sliderRight = document.getElementById('sliderRight1');
-// const thumbLineRight = document.getElementById('thumbLineRight');
-
-// const sliderBottom = document.getElementById('sliderBottom1');
-// const thumbLineBottom = document.getElementById('thumbLineBottom');
-
-//                                        Update line position for each slider           -->
-// function updateLine(slider, line, orientation) {
-//     const sliderRect = slider.getBoundingClientRect();
-//     if (orientation === 'horizontal') {
-//         const thumbPosition = slider.value / 6;
-//         // alert(slider.value);
-//         line.style.top = `-${18}px`;
-//         line.style.bottom = `0px`;
-//         line.style.left = `${thumbPosition}%`;
-//         line.style.right = `${(100 - thumbPosition)}%`;
-//         line.style.height = '105%';
-//     } else {
-//         const thumbPosition = slider.value / 6;
-//         line.style.top = `${thumbPosition}%`;
-//         // line.style.right = `${(100 - thumbPosition)}%`;
-//         line.style.left = '-20px';
-//         line.style.width = '103%';
-//     }
-// }
-
-// sliderTop.addEventListener('input', () => updateLine(sliderTop, thumbLineTop, 'horizontal'));
-
-// sliderLeft.addEventListener('input', () => updateLine(sliderLeft, thumbLineLeft, 'vertical'));
-
-// sliderRight.addEventListener('input', () => updateLine(sliderRight, thumbLineRight, 'vertical'));
-
-// sliderBottom.addEventListener('input', () => updateLine(sliderBottom, thumbLineBottom, 'horizontal'));
-
-// updateLine(sliderTop, thumbLineTop, 'horizontal');
-// updateLine(sliderLeft, thumbLineLeft, 'vertical');
-// updateLine(sliderRight, thumbLineRight, 'vertical');
-// updateLine(sliderBottom, thumbLineBottom, 'horizontal');
-
-
 
 
 let boxsect = document.getElementById('boxesSection');
@@ -80,42 +34,7 @@ function creatElement(element) {
 
         activeDiv = newdiv;
         activeDiv.classList.add('active');
-    //     // applyProp(activeDiv);
-    //     // if (cnt % 2 == 0) {
-    //     //     activeDiv.classList.remove('active');
-    //     // }
-    //     //    thumbLineRight.style.top = `${sliderRight.value / 6 + activeDiv.clientHeight.valueOf() /6}%`;
-    //     //    sliderRight.value = `${sliderRight - activeDiv.clientHeight.valueOf()}`;
-    //     // sliderRight.value = Number(activeDiv.clientHeight.valueOf()) + Number(sliderRight.value);
-
-    //     // console.log(activeDiv.clientTop);
-    //     sliderRight.value = activeDiv.getBoundingClientRect().bottom - 56;
-
-    //     sliderBottom.value = Math.abs(Number(activeDiv.getBoundingClientRect().width) / 14.078) * 6;
-
-
-    //     updateLine(sliderRight, thumbLineRight, 'vertical');
-    //     updateLine(sliderBottom, thumbLineBottom, 'horizontal');
-
-
-    //     // thumbLineRight.style.top = activeDiv.getBoundingClientRect().bottom - 56;
-
-
-    //     sliderRight.addEventListener('input', () => {
-    //         activeDiv.style.height = `${(Number(sliderRight.value) + 56 - activeDiv.getBoundingClientRect().top) / 6}%`;
-    //     })
-
-
-
-    //     sliderBottom.addEventListener('input', () => {
-
-    //         let Width = Math.abs(Number(sliderBottom.value) / 6);
-
-    //         activeDiv.style.width = `${Width}%`;
-
-    //     })
-    });
-
+    
     // adjSlider(newdiv);
     newel.addEventListener('click', (event) => {
         adjSlider(newel);
@@ -129,89 +48,6 @@ function creatElement(element) {
 
 
 
-    // activeDiv.style.background = colorpicker.value;
-
-
-    // display.addEventListener('click', () => {
-    //     activeDiv.style.display = 'flex';
-
-    // })
-
-
-}
-
-// let chCount = 0;
-
-// childDiv.addEventListener('click', () => {
-
-//     chCount++;
-
-//     let child = document.createElement('div');
-//     child.classList = `ch ch${chCount}`;
-//     child.id = `chId${chCount}`;
-//     child.style.height = `${20 + Math.random() * 40}px`
-//     child.style.width = `${20 + Math.random() * 40}px`
-
-
-//     activeDiv.appendChild(child);
-//     // adjSlider(child);
-
-//     child.addEventListener('click', (event) => {
-//         console.log("child clicked for adjSlider");
-//         adjSlider(child);
-//         event.stopPropagation();
-
-//     })
-
-
-
-//     // let Width = Math.abs(sliderBottom.value - sliderTop.value) / 6;
-
-//     // child.style.width = `${Width}%`;
-//     // child.style.height = `${(sliderRight.value) / 6}%`;
-
-//     child.style.background = colorpicker.value;
-
-
-//     // let cnt = 0;
-//     // child.addEventListener('click', function () {
-
-//     // cnt++;
-
-//     // if (activeDiv) {
-//     //     activeDiv.classList.remove('active');
-//     // }
-
-//     // activeDiv = child;
-//     // activeDiv.classList.add('active');
-//     // applyProp(activeDiv);
-//     // if (cnt % 2 == 0) {
-//     //     activeDiv.classList.remove('active');
-//     // }
-//     //    thumbLineRight.style.top = `${sliderRight.value / 6 + activeDiv.clientHeight.valueOf() /6}%`;
-//     //    sliderRight.value = `${sliderRight - activeDiv.clientHeight.valueOf()}`;
-//     // sliderRight.value = Number(activeDiv.clientHeight.valueOf()) + Number(sliderRight.value);
-
-
-//     // child.style.background = 'red';
-//     // sliderRight.addEventListener('input', () => {
-//     //     child.style.height = `${(sliderRight.value - sliderLeft.value) / 6}%`;
-//     // })
-
-
-//     // sliderBottom.addEventListener('input', () => {
-
-//     //     let Width = Math.abs(sliderBottom.value - sliderTop.value) / 6;
-
-//     //     child.style.width = `${Width}%`;
-
-//     // });
-
-
-
-//     // });
-
-// });
 
 function adjSlider(element) {
 
@@ -224,34 +60,6 @@ function adjSlider(element) {
     activeEl.classList.add('active');
 
 
-
-    // sliderRight.value = activeEl.getBoundingClientRect().bottom - 56;
-
-    // sliderBottom.value = Math.abs(Number(activeEl.getBoundingClientRect().width) / 14.078) * 6;
-
-
-    // updateLine(sliderRight, thumbLineRight, 'vertical');
-    // updateLine(sliderBottom, thumbLineBottom, 'horizontal');
-
-
-    // thumbLineRight.style.top = activeDiv.getBoundingClientRect().bottom - 56;
-
-
-    // if (element !== boxsect) {
-    //     sliderRight.addEventListener('input', () => {
-    //         activeEl.style.height = `${(Number(sliderRight.value) + 56 - activeEl.getBoundingClientRect().top) / 6}%`;
-    //     })
-
-
-
-    //     sliderBottom.addEventListener('input', () => {
-
-    //         let Width = Math.abs(Number(sliderBottom.value) / 6);
-
-    //         activeEl.style.width = `${Width}%`;
-
-    //     })
-    // }
 }
 
 
