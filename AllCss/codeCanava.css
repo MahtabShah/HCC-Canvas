@@ -1,6 +1,6 @@
 
 body {
-    background: linear-gradient(180deg, #ff04ff, #53f466);
+    background: linear-gradient(180deg, #ff04df, #53f466);
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 40px;
     overflow: auto;
  
 
@@ -62,9 +62,9 @@ h2 {
     margin: 0 auto;
     border: 1px solid #cccccc3d;
     text-align: center;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: repeat(3, 100px);
     gap: 10px;
-    margin-top: 4px;
+    margin-top: 5px;
     overflow-y: auto;
     margin-bottom: 10px;
 }
@@ -156,7 +156,6 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: #57a65b; */
     overflow-y: auto;
     overflow-x: auto;
     
